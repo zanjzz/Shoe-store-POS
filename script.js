@@ -25,12 +25,10 @@ tabButtons.forEach(button => {
         // 2. Check if it's MAIN tab
         const isMain = button.classList.contains('main');
 
-       if (isMain) {
-            contentSection.style.width = '65%';
-            cartSection.style.display = 'block';
+        if (isMain) {
+            cartSection.classList.remove('hidden');
         } else {
-            contentSection.style.width = '85%';
-            cartSection.style.display = 'none';
+            cartSection.classList.add('hidden');
         }
 
         // 3. Load tab content (NO inline onclick needed)

@@ -16,6 +16,7 @@ body {
     font-family: 'Nunito', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
+    overflow-x: hidden;
 }
 
 main {
@@ -77,14 +78,22 @@ main {
 #content-section {
     width: 65%;
     background-color: var(--background-color);
-   
+    transition: width 0.3s ease;
 }
 
 #cart-section {
     width: 20%;
     background-color: var(--primary-color);
     font-size: 0.9rem;
-    
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#cart-section.hidden {
+    transform: translateX(30px);
+    opacity: 0;
+    pointer-events: none;
 }
 
 #cart-section-top {
