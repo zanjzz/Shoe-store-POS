@@ -25,15 +25,27 @@
             <div id="tab-section-middle">
                 <div id="tab-section-main">
                     <label>Main</label>
-                    <button class="tab-button active" onclick="loadTab('point_of_sale.php')">Point of Sale</button>
-                    <button class="tab-button" onclick="loadTab('inventory.php')">Inventory</button>
-                    <button class="tab-button" onclick="loadTab('orders.php')">Sales</button>
-                    <button class="tab-button" onclick="loadTab('customers.php')">Customers</button>
+                        <button class="tab-button main active" data-page="point_of_sale.php">
+                            Point of Sale
+                        </button>
+
+                        <button class="tab-button" data-page="inventory.php">
+                            Inventory
+                        </button>
+
+                        <button class="tab-button" data-page="orders.php">
+                            Sales
+                        </button>
+
+                        <button class="tab-button" data-page="customers.php">
+                            Customers
+                        </button>
                 </div>
                 <div id="tab-section-reports">
                     <label>Reports</label>
-                    <button class="tab-button" onclick="loadTab('dashboard.php')">Dashboard</button>
-            
+                         <button class="tab-button" data-page="dashboard.php">
+                            Dashboard
+                        </button>
                 </div>
             </div>
 
@@ -50,8 +62,7 @@
         </section>
 
 
-
-        <!-- Cart Section -->
+                
         <section id="cart-section">
 
             <!-- Top part of this section -->
@@ -67,6 +78,8 @@
             </div>
 
         </section>
+     
+
     </main>
     <script src="script.js"></script>
 </body>

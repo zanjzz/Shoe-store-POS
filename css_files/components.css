@@ -16,14 +16,30 @@
     border: 2px solid transparent;
     border-radius: 10px;
     margin: 5px 10px; 
-    transition: 0.1s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .tab-button.active {
     background-color: var(--primary-color);
 }
 
-.tab-button:hover {
+.tab-button:not(.active):hover  {
+    background-color: var(--secondary-highlights);
     border: 2px solid var(--secondary-color);
-    transition: 0.2s ease-in;
+}
+
+#categories {
+    display: flex;
+}
+
+.category-buttons {
+    font-size: 0.8rem;
+    padding:  10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    color: var(--text-color);
+    margin: 10px; 
+    transition: 0.2s ease-in-out;
 }

@@ -4,7 +4,8 @@
     --secondary-color: #E11D48;  /* for actions */
     --text-color: #F8FAFC;       /* for texts */
     --highlights: #FB7185;       /* for interaction states */
-    
+    --secondary-highlights: #a11b313c; /* for hover states */
+
     --letter-spacing: 1px;
 }
 
@@ -26,7 +27,7 @@ main {
     justify-content: center;
     font-size: 2rem;
     min-height: 100vh;
-
+    position: relative;
 }
 #tab-section,
 #content-section,
@@ -76,12 +77,14 @@ main {
 #content-section {
     width: 65%;
     background-color: var(--background-color);
+   
 }
 
 #cart-section {
     width: 20%;
     background-color: var(--primary-color);
     font-size: 0.9rem;
+    
 }
 
 #cart-section-top {
